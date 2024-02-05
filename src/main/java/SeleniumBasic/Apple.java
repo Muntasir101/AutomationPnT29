@@ -25,6 +25,17 @@ public class Apple {
             System.out.println("Title mismatch.");
         }
 
+        // verify home page open by URL
+        String expectedHomeURL = "https://www.apple.com/";
+        String actualHomeURL = driver.getCurrentUrl();
+
+        if(expectedHomeURL.equals(actualHomeURL)){
+            System.out.println("Home page URL Matched.");
+        }
+        else{
+            System.out.println("Home page URL mismatch.");
+        }
+
         driver.close();
 
     }
