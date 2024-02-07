@@ -3,10 +3,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.UUID;
+import org.json.simple.JSONObject;
 
 public class TN_Registration {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, IOException {
         TC_001_registration_valid();
         TC_002_registration_invalid_FirstName();
     }
@@ -15,7 +19,12 @@ public class TN_Registration {
         String uuid = UUID.randomUUID().toString();
         return "user_" + uuid.substring(0, 8) + "@gmail.com";
     }
-    public static void TC_001_registration_valid() throws InterruptedException {
+
+    private static String generateRandomPassword(){
+        String uuid = UUID.randomUUID().toString();
+        return  uuid.substring(0, 8);
+    }
+    public static void TC_001_registration_valid() throws InterruptedException, IOException {
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
 
@@ -30,9 +39,26 @@ public class TN_Registration {
         WebElement LastName= driver.findElement(By.cssSelector("#input-lastname"));
         LastName.sendKeys("Mahmud");
 
+        // Create a random Email Address
+        String randomEmail = generateRandomEmail();
+
+        // Create a random password
+        String randomPassword =  generateRandomPassword();
+
+        // Store the email and password in JSON object
+        JSONObject userData = new JSONObject();
+        userData.put("email", randomEmail);
+        userData.put("password", randomPassword);
+
+        // Write the JSON object to a file
+        FileWriter file = new FileWriter("data/userdata.json");
+        file.write(userData.toJSONString());
+        file.flush();
+
+
         // Enter Email - Random unique Email
         WebElement Email= driver.findElement(By.cssSelector("#input-email"));
-        Email.sendKeys(generateRandomEmail());
+        Email.sendKeys(randomEmail);
 
         // Enter phone
         WebElement Phone= driver.findElement(By.cssSelector("#input-telephone"));
@@ -40,11 +66,11 @@ public class TN_Registration {
 
         // Enter password
         WebElement Password= driver.findElement(By.cssSelector("input#input-password"));
-        Password.sendKeys("123456");
+        Password.sendKeys(randomPassword);
 
         // Enter confirm password
         WebElement ConfirmPassword= driver.findElement(By.cssSelector("input#input-confirm"));
-        ConfirmPassword.sendKeys("123456");
+        ConfirmPassword.sendKeys(randomPassword);
 
         // Click Subscribe
         WebElement SubscribeYesButton = driver.findElement(By.cssSelector("label:nth-of-type(1) > input[name='newsletter']"));
