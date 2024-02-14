@@ -10,12 +10,12 @@ public class testNG_demo1 {
         System.out.println("Before Method Executed.");
     }
 
-    @Test
+    @Test(priority = 2)
     public void testCase1()  {
         System.out.println("Test case 1 Executed.");
     }
 
-    @Test
+    @Test(priority = 1)
     public void testCase2()  {
         System.out.println("Test case 2 Executed.");
     }

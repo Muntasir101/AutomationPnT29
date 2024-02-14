@@ -4,8 +4,7 @@
 
     <test name="Combine Test">
         <classes>
-            <class name="TestNG.testNG_demo1"/>
-            <class name="TestNG.TestNG_TN_Product_search_order"/>
+            <class name="TestNG.testNG_demo2"/>
         </classes>
     </test>
 
