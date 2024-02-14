@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Demo Suite" verbose="1">
+
+    <test name="Combine Test">
+        <classes>
+            <class name="TestNG.testNG_demo1"/>
+            <class name="TestNG.TestNG_TN_Product_search_order"/>
+        </classes>
+    </test>
+
+</suite>
