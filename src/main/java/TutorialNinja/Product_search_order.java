@@ -81,7 +81,7 @@ public class Product_search_order {
         WebElement Final_Check_Out = driver.findElement(By.cssSelector("#content div:nth-child(8) .btn-primary"));
         Final_Check_Out.click();
 
-        driver.close();
+        driver.quit();
 
     }
 }
