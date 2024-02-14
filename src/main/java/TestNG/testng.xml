@@ -3,8 +3,15 @@
 <suite name="Demo Suite" verbose="1">
 
     <test name="Combine Test">
+        <groups>
+            <dependencies>
+                <group depends-on="Login" name="dashboard"></group>
+                <group depends-on="Dashboard" name="logout"></group>
+            </dependencies>
+        </groups>
+
         <classes>
-            <class name="TestNG.testNG_demo2"/>
+            <class name="TestNG.GroupDependency2"/>
         </classes>
     </test>
 
