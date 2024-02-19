@@ -2,16 +2,11 @@
 
 <suite name="Demo Suite" verbose="1">
 
-    <test name="Combine Test">
-        <groups>
-            <dependencies>
-                <group depends-on="Login" name="dashboard"></group>
-                <group depends-on="Dashboard" name="logout"></group>
-            </dependencies>
-        </groups>
-
+    <test name="Parameterization Test">
+        <parameter name="searchKeyword" value="iPhone"></parameter>
+        <parameter name="quantity" value="10"></parameter>
         <classes>
-            <class name="TestNG.GroupDependency2"/>
+            <class name="TestNG.TestNG_TN_Product_search_Parameter"/>
         </classes>
     </test>
 
