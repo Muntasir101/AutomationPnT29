@@ -3,10 +3,9 @@
 <suite name="Demo Suite" verbose="1">
 
     <test name="Parameterization Test">
-        <parameter name="searchKeyword" value="iPhone"></parameter>
-        <parameter name="quantity" value="10"></parameter>
+
         <classes>
-            <class name="TestNG.TestNG_TN_Product_search_Parameter"/>
+            <class name="TestNG.testNG_TN_Login_DataProvider"/>
         </classes>
     </test>
 

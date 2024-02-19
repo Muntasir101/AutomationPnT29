@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Browser Launch..]]>
@@ -8,21 +8,18 @@
       <![CDATA[Webpage open..]]>
     </line>
     <line>
-      <![CDATA[Search by iPhone]]>
+      <![CDATA[Browser Launch..]]>
     </line>
     <line>
-      <![CDATA[Add Quantity 10]]>
-    </line>
-    <line>
-      <![CDATA[Click add to cart.]]>
+      <![CDATA[Webpage open..]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-02-19T15:35:54 BDT" name="Demo Suite" finished-at="2024-02-19T15:36:12 BDT" duration-ms="18554">
+  <suite started-at="2024-02-19T16:03:05 BDT" name="Demo Suite" finished-at="2024-02-19T16:03:41 BDT" duration-ms="36394">
     <groups>
     </groups>
-    <test started-at="2024-02-19T15:35:54 BDT" name="Parameterization Test" finished-at="2024-02-19T15:36:12 BDT" duration-ms="18554">
-      <class name="TestNG.TestNG_TN_Product_search_Parameter">
-        <test-method is-config="true" signature="testSetup()[pri:0, instance:TestNG.TestNG_TN_Product_search_Parameter@6db9f5a4]" started-at="2024-02-19T15:35:54 BDT" name="testSetup" finished-at="2024-02-19T15:36:07 BDT" duration-ms="13469" status="PASS">
+    <test started-at="2024-02-19T16:03:05 BDT" name="Parameterization Test" finished-at="2024-02-19T16:03:41 BDT" duration-ms="36394">
+      <class name="TestNG.testNG_TN_Login_DataProvider">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:05 BDT" name="testSetup" finished-at="2024-02-19T16:03:16 BDT" duration-ms="11136" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch..]]>
@@ -32,36 +29,57 @@
             </line>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method signature="TC_01_Product_Search_Valid(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_TN_Product_search_Parameter@6db9f5a4]" started-at="2024-02-19T15:36:07 BDT" name="TC_01_Product_Search_Valid" finished-at="2024-02-19T15:36:11 BDT" duration-ms="3729" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:16 BDT" name="testLogin" data-provider="LoginValidDataProvider" finished-at="2024-02-19T16:03:21 BDT" duration-ms="4636" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[iPhone]]>
+                <![CDATA[mail123@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[10]]>
+                <![CDATA[123456]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Search by iPhone]]>
-            </line>
-            <line>
-              <![CDATA[Add Quantity 10]]>
-            </line>
-            <line>
-              <![CDATA[Click add to cart.]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- TC_01_Product_Search_Valid -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.TestNG_TN_Product_search_Parameter@6db9f5a4]" started-at="2024-02-19T15:36:11 BDT" name="tearDown" finished-at="2024-02-19T15:36:12 BDT" duration-ms="1237" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:21 BDT" name="tearDown" finished-at="2024-02-19T16:03:22 BDT" duration-ms="1185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestNG.TestNG_TN_Product_search_Parameter -->
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:22 BDT" name="testSetup" finished-at="2024-02-19T16:03:35 BDT" duration-ms="12907" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Launch..]]>
+            </line>
+            <line>
+              <![CDATA[Webpage open..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:35 BDT" name="testLogin" data-provider="LoginValidDataProvider" finished-at="2024-02-19T16:03:40 BDT" duration-ms="5355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user_5924a1d5@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fc57c192]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:40 BDT" name="tearDown" finished-at="2024-02-19T16:03:41 BDT" duration-ms="1045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestNG.testNG_TN_Login_DataProvider -->
     </test> <!-- Parameterization Test -->
   </suite> <!-- Demo Suite -->
 </testng-results>
