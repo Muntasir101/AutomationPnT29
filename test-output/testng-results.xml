@@ -14,12 +14,12 @@
       <![CDATA[Webpage open..]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-02-19T16:03:05 BDT" name="Demo Suite" finished-at="2024-02-19T16:03:41 BDT" duration-ms="36394">
+  <suite started-at="2024-02-28T15:14:32 BDT" name="Demo Suite" finished-at="2024-02-28T15:15:03 BDT" duration-ms="31435">
     <groups>
     </groups>
-    <test started-at="2024-02-19T16:03:05 BDT" name="Parameterization Test" finished-at="2024-02-19T16:03:41 BDT" duration-ms="36394">
+    <test started-at="2024-02-28T15:14:32 BDT" name="Parameterization Test" finished-at="2024-02-28T15:15:03 BDT" duration-ms="31435">
       <class name="TestNG.testNG_TN_Login_DataProvider">
-        <test-method is-config="true" signature="testSetup()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:05 BDT" name="testSetup" finished-at="2024-02-19T16:03:16 BDT" duration-ms="11136" status="PASS">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@6a03bcb1]" started-at="2024-02-28T15:14:32 BDT" name="testSetup" finished-at="2024-02-28T15:14:44 BDT" duration-ms="11869" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch..]]>
@@ -29,7 +29,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:16 BDT" name="testLogin" data-provider="LoginValidDataProvider" finished-at="2024-02-19T16:03:21 BDT" duration-ms="4636" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@6a03bcb1]" started-at="2024-02-28T15:14:44 BDT" name="testLogin" data-provider="LoginValidDataProvider" finished-at="2024-02-28T15:14:49 BDT" duration-ms="4596" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:21 BDT" name="tearDown" finished-at="2024-02-19T16:03:22 BDT" duration-ms="1185" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@6a03bcb1]" started-at="2024-02-28T15:14:49 BDT" name="tearDown" finished-at="2024-02-28T15:14:50 BDT" duration-ms="1008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="testSetup()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:22 BDT" name="testSetup" finished-at="2024-02-19T16:03:35 BDT" duration-ms="12907" status="PASS">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@6a03bcb1]" started-at="2024-02-28T15:14:50 BDT" name="testSetup" finished-at="2024-02-28T15:14:58 BDT" duration-ms="8339" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch..]]>
@@ -59,7 +59,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:35 BDT" name="testLogin" data-provider="LoginValidDataProvider" finished-at="2024-02-19T16:03:40 BDT" duration-ms="5355" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@6a03bcb1]" started-at="2024-02-28T15:14:58 BDT" name="testLogin" data-provider="LoginValidDataProvider" finished-at="2024-02-28T15:15:02 BDT" duration-ms="4540" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@610f7aa]" started-at="2024-02-19T16:03:40 BDT" name="tearDown" finished-at="2024-02-19T16:03:41 BDT" duration-ms="1045" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.testNG_TN_Login_DataProvider@6a03bcb1]" started-at="2024-02-28T15:15:02 BDT" name="tearDown" finished-at="2024-02-28T15:15:03 BDT" duration-ms="980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

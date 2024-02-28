@@ -19,7 +19,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.17.0</version>
+            <version>4.18.1</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
@@ -36,9 +36,6 @@
             <version>7.9.0</version>
             <scope>test</scope>
         </dependency>
-
-
-
 
     </dependencies>
 
