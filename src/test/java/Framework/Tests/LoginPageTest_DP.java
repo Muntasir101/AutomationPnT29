@@ -8,9 +8,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 
-public class LoginTest {
-    WebDriver driver;
-    LoginPage loginPage;
+
+public class LoginPageTest_DP {
+
+    private WebDriver driver;
+    private LoginPage loginPage;
 
     @Parameters("browserName")
     @BeforeMethod
@@ -30,27 +32,35 @@ public class LoginTest {
         } else {
             System.out.println("Unsupported Browser.Please use Chrome or Firefox or Edge");
         }
-        loginPage = new LoginPage(driver);
-        driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
+
         driver.manage().window().maximize();
-        Reporter.log("Webpage open..");
-        Thread.sleep(3000);
+        // Initialize LoginPage
+        driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
+        loginPage = new LoginPage(driver);
     }
+
     @Test(dataProvider = "LoginValidDataProvider")
-    public void testLogin(String Email, String Password) throws InterruptedException {
-        loginPage.enterEmailAddress(Email);
-        loginPage.enterPassword(Password);
+    public void testLogin(String Email_DP, String Password_DP) {
+        // Test data
+       // String email = "mail123@gmail.com";
+       // String password = "123456";
+
+        // Perform login
+        loginPage.enterEmailAddress(Email_DP);
+        loginPage.enterPassword(Password_DP);
         loginPage.clickLoginButton();
     }
+
     @AfterMethod
     public void tearDown() {
+        // Close the WebDriver after each test
         driver.quit();
     }
+
     @DataProvider(name = "LoginValidDataProvider")
     public Object[][] loginDataValid(){
         return new Object[][]{
                 {"mail123@gmail.com", "123456"}
         };
     }
-
 }
