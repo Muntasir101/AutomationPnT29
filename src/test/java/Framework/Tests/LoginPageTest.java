@@ -1,6 +1,7 @@
 package Framework.Tests;
 
 import Framework.Pages.LoginPage;
+import Framework.utils.PropertyReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -44,8 +45,10 @@ public class LoginPageTest {
         }
 
         driver.manage().window().maximize();
+
+        PropertyReader propertyReader = new PropertyReader("src/test/java/Framework/config/test_config.properties");
         // Initialize LoginPage
-        driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
+        driver.get(propertyReader.getProperty("LoginPageUrl_Test"));
         logger.info("Login Page Open");
         loginPage = new LoginPage(driver);
     }

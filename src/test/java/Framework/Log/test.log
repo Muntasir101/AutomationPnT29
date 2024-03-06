@@ -10,3 +10,15 @@
 15:28:19.257 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Typing Password
 15:28:19.729 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Click Login Button
 15:28:19.931 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Test Done.Browser Closed.
+15:34:44.281 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Chrome Browser Launch
+15:34:45.404 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Login Page Open
+15:34:45.662 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Typing Email
+15:34:45.821 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Typing Password
+15:34:46.273 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Click Login Button
+15:34:46.472 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Test Done.Browser Closed.
+15:45:19.259 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Chrome Browser Launch
+15:45:23.624 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Login Page Open
+15:45:23.880 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Typing Email
+15:45:24.048 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Typing Password
+15:45:24.522 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Click Login Button
+15:45:24.756 [TestNG-tests-1] INFO  Framework.Tests.LoginPageTest - Test Done.Browser Closed.
