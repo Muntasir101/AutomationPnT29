@@ -1,5 +1,6 @@
 package Framework.Pages;
 
+import Framework.Locators.LoginPageLocators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,9 +17,9 @@ public class LoginPage {
     }
 
     private void initializeElements(){
-        EmailAddress = driver.findElement(By.cssSelector("input#input-email"));
-        Password_field = driver.findElement(By.cssSelector("input#input-password"));
-        LoginButton = driver.findElement(By.cssSelector("[action] .btn-primary"));
+        EmailAddress = driver.findElement(By.cssSelector(LoginPageLocators.EMAIL_INPUT_FIELD_CSS));
+        Password_field = driver.findElement(By.cssSelector(LoginPageLocators.PASSWORD_INPUT_FIELD_CSS));
+        LoginButton = driver.findElement(By.cssSelector(LoginPageLocators.LOGIN_BUTTON_CSS));
     }
 
     public void enterEmailAddress(String email){
